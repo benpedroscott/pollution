@@ -1,0 +1,300 @@
+body {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+nav {
+	background: #D1A635;
+	padding: 1px;
+	border-bottom: 3px;
+	text-align: center;
+	color: black;
+}
+
+ul {
+	list-style-type: none;
+	font-size: 20px;
+	display: flex;
+	flex-direction: row;
+	font-family: 'EB Garamond';
+	font-style: italic;
+	margin: 10px;
+}
+
+ul.footer-ul {
+	list-style-type: none;
+	font-size: 15px;
+	display: flex;
+	flex-direction: row;
+	font-family: 'EB Garamond';
+	font-style: italic;
+}
+
+div.observablehq {
+	display: flex;
+	justify-content: center;
+}
+
+a.list {
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+li {
+	float: none;
+	width: 33%;
+}
+
+h1 {
+	font-family: 'Playfair Display';
+	font-size: 40px;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Playfair Display';
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: 'Playfair Display';
+	font-size: 25px;
+	text-align: center;
+	margin: auto;
+	font-weight: bold;
+}
+
+.description {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+h4 {
+	font-family: 'Playfair Display';
+	font-size: 20px;
+	text-align: center;
+	margin: auto;
+}
+
+h1.cancer {
+	font-family: 'Playfair Display';
+	font-size: 40px;
+	text-align: center;
+	margin: 6rem auto;
+	color: white;
+	font-weight: bold;
+}
+
+h1.enterprise {
+	font-family: 'Playfair Display';
+	font-size: 40px;
+	text-align: center;
+	margin: 5rem auto;
+	color: white;
+	font-weight: bold;
+}
+
+p.byline {
+	font-size: 20px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	text-indent: 0px;
+	font-style: italic;
+}
+
+p {
+	font-family: 'EB Garamond';
+	max-width: 600px;
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.inner-photos {
+	width: 100%%;
+	margin: 1rem auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1rem;
+	max-width: 900px;
+}
+
+.inner-photos img {
+	width: 100%;
+}
+
+
+}
+a.brown_box {
+	background-color: #C0A18F;
+}
+a.blue_box {
+	background-color: #6FA4C2;
+}
+a.green_box {
+	background-color: #A3B990;
+}
+p.text {
+	text-indent: 50px;
+	font-family: 'EB Garamond';
+	text-align: left;
+}
+p.text-first {
+	text-indent: 0px;
+}
+a.dropcap {
+	float: left;
+	font-size: 64px;
+	line-height: 1;
+	font-weight: bold;
+	margin-right: 9px;
+	color: #D1A635;
+}
+nav a:hover,
+p a.list:hover {
+	background-color: #e6cc87;
+	color: #black;
+	font-weight: bold;
+}
+
+/* css for cacner alley and enterprise, la page */
+section.cancer_header {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin: 1rem auto;
+	max-width: 700px;
+	text-align: left;
+	gap: 20px;
+}
+section.cancer_full_header {
+	background-image: url("images/cancer_header.png");
+	background-size: auto;
+	background-position: center;
+}
+section.enterpriseHeader {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin: 1rem auto;
+	max-width: 700px;
+	text-align: center;
+	gap: 20px;
+}
+section.companies_full_header {
+	background-image: url("images/companies_header.png");
+	background-size: auto;
+	background-position: center;
+}
+section.enterprise_full_header {
+	background-image: url("images/enterprise_header.png");
+	background-size: auto;
+	background-position: center;
+}
+.infographic_spot {
+	display: flex;
+	flex-direction: row;
+	max-width: 600px;
+	margin: 1rem auto;
+	font-size: 25px;
+	text-indent: 0px;
+	font-family: 'EB Garamond';
+}
+.infographic_1 {
+	float: right;
+}
+
+/* css for enterprise, la*/
+.company_container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 20rem;
+	margin-right: 20rem;
+}
+.company {
+	border: 1px solid black;
+	margin: 1rem auto;
+	padding: 1rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	gap: 1rem;
+	background: #D1A635;
+}
+.company img {
+	width: 200px;
+}
+.company_text {
+	background: #FFFFFF;
+	width: 100%;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+.tableauPlaceholder {
+	margin: 1rem auto;
+}
+#scroller {
+	overflow: hidden;
+}
+#menu_trigger {
+	display: none;
+}
+@media only screen and (min-width: 675px) {
+	.company {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		text-align: left;
+		align-items: end;
+		justify-content: center;
+	}
+}
+@media only screen and (min-width: 1100px) {
+	.company {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		text-align: left;
+		align-items: end;
+		justify-content: center;
+	}
+}
+@media (max-width: 700px) {
+	ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	body {
+		padding: 1rem;
+	}
+
+	li {
+		width: 100%;
+		border-top: none;
+		border-bottom: none;
+	}
+
+	#menu_trigger {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+	#menu_nav {
+		display: none;
+	}
+}
+
+/*
+font-family: 'EB Garamond', serif;
+font-family: 'Playfair Display', serif;

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Water pollution in Enterprise, Louisiana</title>
+      <meta name="description" content="A page dedicated to data related to water pollution in Enterprise, Louisiana.">
+      <meta name="author" content="Ben Scott">
+      <meta name="keywords" content="Ben Scott, Louisiana, Pollution"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <!-- change this -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styleHome.css">
+   </head>
+   <body>
+      <nav>
+         <ul id="menu_nav">
+            <li><a class="list" href="index.html">Home</a></li>
+            <li><a class="list" href="indexCancer.html">Cancer Alley</a></li>
+            <li><a class="list" href="indexEnterprise.html">Enterprise, LA</a></li>
+            <li><a class="list" href="indexCompanies.html">Companies</a></li>
+         </ul>
+         <button id="menu_trigger">☰</button>
+      </nav>
+      <section class="enterprise_full_header">
+         <section class="enterpriseHeader">
+            <h1 class="enterprise">Enterprise, LA:<br />A rural town<br />with no clean water</h1>
+         </section>
+      </section>
+      <p class="text-first"><a class="dropcap">E</a>nterprise, Louisiana is an incorporated community that sits in Catahoula Parish. The community gained widespread media attention for its eye-catching images of brown contaminated water coming from their garden hoses and taps.</p>
+      <p>Prior to the media focus, one report from Virginia Tech said its team couldn’t even find the community on Google Maps.</p>
+      <p>Catahoula Parish, the parish containing Enterprise, is a sparsely populated, with a total population estimate of 9,494 people. According to <a href="https://www.census.gov/quickfacts/fact/table/US,LA,catahoulaparishlouisiana/PST045219" target="blank">U.S. Census Bureau data</a>. Over a quarter of the population lives in poverty, far above the 19% of Louisiana’s population living in poverty and even further above the 10% of the entire United States living in poverty.</p>
+      <p>The Baton Rouge Advocate reported that when the Louisiana governor’s office investigated 10 of the worst water systems in the state, it found a common thread linking most of the systems together: aging infrastructure along with lacking funds.</p>
+      <p>The report continued to say that a majority of the dilapidated and dangerous water systems are found in rural communities, such as Enterprise. As more residents leave these small communities, they have less taxpayer dollars to support and fix infrastructure projects. </p>
+      <p>Thus, when Virginia Tech’s team behind the U.S. Water Study rolled into Enterprise, its findings were hardly surprising. The team’s report said it initially visited the town after Tulane University had reports of finding fecal contamination in the community’s water system.</p>
+      <p>In its own study of 20 randomly selected homes in Enterprise, Virginia Tech didn’t find any fecal contamination – however, it found dire levels of contamination for other harmful substances. Of the 20 homes surveyed, 16 homes exceeded the limit for disinfection by-products – a group of chemicals that include Chloroform, a substance which is a probable carcinogen and can be toxic if inhaled or swallowed, according to the <a href="https://www.cdc.gov/niosh/topics/chloroform/default.html" target="_blank">CDC</a>.</p>
+      <p>The study also found that three of the surveyed homes exceeded the EPA’s standard for lead levels, one home reaching nearly eight times the standard level. The report stated its concern over this finding, since the study conducted a random sampling and not a sampling directed towards homes high-risk, worst-case homes, which the EPA bases its standard on. This 20% detection rate of lead matches the same sampling found in Flint, Michigan.</p>
+      <p>The high levels of lead shows that the communities’ pipes have corroded towards to a dire level.</p>
+      <h3>Safe Drinking Water Act violations</h3>
+      <p>Congress passed the Safe Drinking Water Act in 1974, and subsequently amended the act in 1986 and 1996. Much of the Act aims to protect drinking water and the sources of safe drinking water – namely bodies of freshwater.</p>
+      <p>The act also authorizes the Environmental Protection Agency to create a nationwide set of standards for drinking water, all in the name of protecting people from harmful foreign substances and such in their drinking water.</p>
+      <p>The EPA has a <a href ="https://ofmpub.epa.gov/apex/sfdw/f?p=108:200:::NOdatabase" target="_blank">database</a> storing the violations of the SDWA, which is broken down by state, county and water supply name – which is often associated with a neighborhood or city. The following maps show how often water systems within all parishes violate the SDWA and the total population of each county that has been affected by a violation at least once.</p>
+      <h4>Water violations by parish population impacted</h4>
+      <div class = "pop1" id="observablehq-PopChart-3925db1f"></div>
+      <p class="byline"><a href="https://observablehq.com/@benpedroscott/vega-cirlce-map">Explore the data and Observable notebook</a></p>
+      <script type="module">
+         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+         import define from "https://api.observablehq.com/@benpedroscott/vega-cirlce-map.js?v=3";
+         new Runtime().module(define, name => {
+           if (name === "PopChart") return new Inspector(document.querySelector("#observablehq-PopChart-3925db1f"));
+         });
+      </script>
+      <h4>Water violations by parish</h4>
+      <div id="observablehq-VioChart-fe5384dc"></div>
+      <p class="byline"><a href="https://observablehq.com/@benpedroscott/vega-cirlce-map">Explore the data and Observable notebook</a></p>
+      <script type="module">
+         import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+         import define from "https://api.observablehq.com/@benpedroscott/vega-cirlce-map.js?v=3";
+         new Runtime().module(define, name => {
+           if (name === "VioChart") return new Inspector(document.querySelector("#observablehq-VioChart-fe5384dc"));
+         });
+      </script>
+      <p>Catahoula Parish doesn’t stand out in the data, likely because of its small rural population, which The Advocate has claimed is the prototype for underreporting water violations. However, the biggest perpetrator from both maps is St. Tammany Parish, a more up-and-coming parish in the state that provides affluent suburbs that feed the New Orleans metro area (and is also my home parish).</p>
+      <p>The parish has both a high number of violations and a high number people affected by those violations, meaning the violations are far-reaching and widespread across the parish.</p>
+      <p>Just form a cursory glance, the names of affluent neighborhoods ranked right alongside the water systems of RV and trailer home parks. It makes sense, as the parish really began to develop in recent years from a strongly rural community to an affluent white flight suburb -- it may be possible that city governments within the parish haven't yet decided to upgrade their formerly rural water systems into the twenty-first century.</p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <h3>Sources and further reading</h3>
+      <p>Virginia Tech's <a href="http://www.uswaterstudy.org/projects/microbial-contamination/enterprise-louisiana/" target="_blank">U.S Water Study</a></p>
+      <p>CNN Article <a href="https://www.cnn.com/2018/11/28/health/enterprise-louisiana-water/index.html" target="_blank">"This town is like thousands that are vulnerable to contaminated water, with no fix in sight"</a></p>
+      <p>The Advocate article <a href="https://www.theadvocate.com/baton_rouge/news/politics/legislature/article_a413aaec-6034-11e8-b482-0f34594f1a7c.html" target="_blank">"'Most distressed' drinking water systems? Governor's panel identifies 10 to start overhaul"</a></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <footer>
+         <nav>
+            <ul class="footer-ul">
+               <li><a class="list" href="index.html">Home</a></li>
+               <li><a class="list" href="indexCancer.html">Cancer Alley</a></li>
+               <li><a class="list" href="indexEnterprise.html">Enterprise, LA</a></li>
+               <li><a class="list" href="indexCompanies.html">Companies</a></li>
+               <li><a class="list" href="https://benpedroscott.github.io/data-viz-site/index.html" target="_blank">Contact</a></li>
+            </ul>
+         </nav>
+      </footer>
+      <script src="main.js" type="text/javascript"></script>
+   </body>
